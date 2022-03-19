@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Basics | Dialog Window | UI Components</title>
+    <style>
+      #btn-close {
+        border-color: #002966;
+        background-color: #3385ff;
+        font-size: 12px;
+        color: white;
+      }
+      .btn-answer {
+        font-size: 20px;
+        padding: 20px;
+      }
+      .btn-green {
+        color: green;
+        border-color: green;
+        background-color: #e6fff2;
+      }
+      .btn-red {
+        color: red;
+        border-color: red;
+        background-color: #ffe6e6;
+      }
+      #form-survey {
+        border: #999;
+        padding: 20px;
+        background-color: rgb(241, 217, 217);
+      }
+      #action {
+        border: 1px solid blue;
+        margin-top: 50px;
+        margin-left: 30px;
+      }
+      #action-close {
+        text-align: right;
+      }
+      h1,
+      p {
+        font-size: 40px;
+        color: #1307c2;
+        line-height: 30px;
+        margin-left: 20px;
+      }
+      p {
+        color: #3385ff;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="Thankyou.html" id="form-survey">
+      <div id="action-close">
+        <button
+          onclick="window.open('http://127.0.0.1:5500/sorry.html')"
+          id="btn-close"
+        >
+          x
+        </button>
+      </div>
+      <h1>Are you satisfied by our services!</h1>
+      <p>Please take your time and appreciate our effors.</p>
+      <div id="actions">
+        <button class="btn-answer btn-green">I am satisfied</button>
+        <button class="btn-answer btn-red">I am not satisfied</button>
+      </div>
+    </form>
+  </body>
+</html>
